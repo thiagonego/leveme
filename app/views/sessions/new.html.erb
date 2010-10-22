@@ -1,0 +1,93 @@
+<div id="middleLevelContainer1">
+  <div class="loginLeftColumm leftColumn">
+    <div class="signInForm">
+      <h1 class="signInHeader generalPageHeader">Entrar no Leve.Me</h1>
+
+      <p>Entre para poder compartilhar seus links</p>
+
+      <div class="signInFormContainer">
+        <% form_for resource_name, resource, :url => session_path(resource_name) do |f| -%>
+          <input type="hidden" value="10fe8d07564e4043a111af7883532164" name="_xsrf" />
+
+          <div class="signInUsernameBox bitlyAuthFormBox">
+			<%= f.label :email, "Email:" %>
+            
+            <div class="bitlyLoginFormField authFormFieldContainer">
+			  <%= f.text_field :email %>
+            </div>
+
+            <div class="hr">
+              <hr />
+            </div>
+          </div>
+
+          <div class="signInPasswordBox bitlyAuthFormBox">
+            <%= f.label :password, "Senha: " %>
+
+            <div class="bitlyLoginFormField authFormFieldContainer">
+              <%= f.password_field :password %>
+            </div>
+
+            <div class="hr">
+              <hr />
+            </div>
+
+
+		  <% if devise_mapping.rememberable? -%>
+		    <p><%= f.check_box :remember_me %> <%= f.label :remember_me, "Lembrar meu login" %></p>
+		  <% end -%>
+		
+          </div>
+
+		  <%= f.submit "Entrar", :class => "submitButtonBackground" %>
+        <% end -%>
+
+        <div class="signInMeta">
+          <p>Ainda não tem conta? <%= link_to t('devise.registrations.link'), new_registration_path(resource_name) %></p>
+
+          <p><%= link_to t('devise.passwords.link'), new_password_path(resource_name) %></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="hr">
+      <hr />
+    </div>
+  </div>
+
+  <div class="loginRightColumn rightColumn">
+    <div class="signUp_promo_container">
+      <div class="signUp_promo_container_inner">	  
+		<b class="signUpPromoContainerUpperLeft"></b>
+		<b class="signUpPromoContainerUpperRight"></b>
+		<b class="signUpPromoContainerLowerLeft"></b>
+		<b class="signUpPromoContainerLowerRight"></b>	  
+	  
+        <h1 class="signInHeader generalPageHeader">Encurte e faça muito mais com o Leve.Me</h1>
+
+        <ul class="signup_features_list">
+          <li>Link muito fácio e messagem para compartilhar</li>
+
+          <li>Busca complexa</li>
+
+          <li>Use o leve.me em qualquer canto com o plugin <a href=
+          "/pages/sidebar">sidebar</a></li>
+
+          <li>Ferramentas de consultas</li>
+
+          <li>API super fácil</li>
+
+        </ul>
+
+        <div class="signUp_promo_container_bottom">
+          <div class="signUp_promo_container_bottom_inner">
+			<%= link_to t('devise.registrations.link'), new_registration_path(resource_name), :class => "signup_promo_action_orange_button" %>
+            <div class="hr">
+              <hr />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

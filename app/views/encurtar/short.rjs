@@ -1,0 +1,10 @@
+unless @uri_invalid
+	page << "jQuery('.history_errorMessage').hide('');"
+	page << "jQuery('#results').show();"
+	page.replace_html 'links', :partial => 'encurtado', :locals => {:link => @link}
+	page << "apagarItemExistente(#{@link.id});"
+	page.insert_html :bottom, 'results_itens', :partial => 'item_result', :locals => {:link => @link}	
+else
+	page << "alert('URL inválida. Tente digitar novamente');"
+end	
+

@@ -1,0 +1,49 @@
+	<div id="<%= @link.id %>_item" class="resultsItemContainer">
+	  <div class="resultsColumn2 resultsColumn">
+		<div class="statsList" style="display: block;">
+		  <div class="userStats">
+			<h4>
+				<a href="/ci4frz+" type="ci4frz" title= "Get Real-time Metrics for this link"><%= @link.visitas.size %></a>				
+			</h4>
+		  </div>
+		</div>
+
+		<div class="hr">
+		  <hr />
+		</div>
+	  </div>
+
+	  <div class="resultsColumn4 resultsColumn">
+		<div class="linkTitleContainer">
+		  <h4 class="linkTitle">
+			<%= link_to "#{@link.url.href}", "#{@link.url.href}"%>
+		  </h4>
+		</div>
+
+		<div class="moreInfo row2">
+		  <div class="long_url_display_more">
+			<%= link_to "#{@link.url.href}", "#{@link.url.href}"%>
+		  </div>
+		  <div type="ci4frz" class="backtypeSocialSearchBox"></div>
+		</div>
+	  </div>
+
+	  <div class="resultsColumn5 resultsColumn">
+		<a title="Real-time stats for bit.ly/ci4frz+" href="/ci4frz+">Info Page+</a>
+	  </div>
+
+	  <div class="resultsColumn6 resultsColumn">
+		<div class="dateAndTimeBox">
+		  <%= @link.created_at.strftime("%H:%M:%S")%>
+		</div>
+	  </div>
+
+	  <div class="resultsColumn7 resultsColumn">
+		<div alt="http://bit.ly/ci4frz" type="ci4frz" class="optionsDropDownContainer">
+		</div>
+	  </div>
+
+	  <div class="hr">
+		<hr />
+	  </div>
+	</div>

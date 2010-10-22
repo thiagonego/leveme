@@ -1,0 +1,2 @@
+warden --version '>= 0'
+devise --version '= 1.0.6'

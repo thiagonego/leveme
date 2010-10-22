@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-BR">
+
+	<head>
+		<title>Leve.Me</title>
+		<%= stylesheet_link_tag "style" %>
+		<%= javascript_include_tag :defaults %>
+		<%= javascript_include_tag 'jquery-1.3.2.min' %>
+		<%= javascript_include_tag 'init' %>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	</head>
+	
+	<body>
+	
+		<div id="container">
+
+			<div id="top">
+
+				<div class="topInner">
+
+					<div id="logo">
+						Leve<span class="logo_ponto">.Me</span>
+					</div>
+
+
+					<div id="loginContainer">
+						
+						<% if usuario_signed_in? %>
+							Usuário: <%= current_usuario.email %>
+							<%= link_to "Sair", destroy_usuario_session_path %>				
+						<% else %>
+							<%= link_to "Registre-se", new_usuario_registration_path %>
+							 ou <%= link_to "Entre", new_usuario_session_path%>
+						<% end %>				
+						
+					</div>
+
+
+					<div id="mainTabsContainer">
+						<ul class="mainTabsList">
+							<li ><a class="activeTab" href="/">Encurtar</a></li>
+							<li ><a class="inactiveTab" href="/a/search">Estatisticas</a></li>
+						</ul>
+					</div>
+
+				</div>
+
+
+			</div> 
+				
+			<div id="middle">
+
+				<div id="subNav">
+				
+					<b class="leftEdge"></b>
+					<b class="rightEdge"></b>
+					
+					<div id="subNavInner">
+					
+						<ul class="subNavList">
+
+							<li class="subNavHelp">
+								<div class="inactiveSubNav">
+									<b class="hoverTabItemLeftEdge"></b>
+									<b class="hoverTabItemRightEdgeEdge"></b>
+									<a href="">Ajuda</a>
+								</div>
+							</li>
+
+							<li class="active_subnav ">
+								<div class="activeSubNav">
+									<b class="selectedTabItemLeftEdge"></b>
+									<b class="selectedTabItemRightEdgeEdge"></b>
+									<a href="/">Encurtar</a>
+								</div>
+							</li>
+
+							<li class="">
+								<div class="inactiveSubNav">
+									<b class="hoverTabItemLeftEdge"></b>
+									<b class="hoverTabItemRightEdgeEdge"></b>
+									<a href="">Ferramentas</a>
+								</div>
+							</li>
+
+							<li class="">
+								<div class="inactiveSubNav">
+									<b class="hoverTabItemLeftEdge"></b>
+									<b class="hoverTabItemRightEdgeEdge"></b>
+									<a href="">Api</a>
+								</div>
+							</li>
+
+						</ul>
+						
+						<div class="hr"><hr /></div>
+						
+					</div>
+					
+				</div>
+				
+	
+				<%= flash_message %>
+				<%= yield %>				
+
+			</div> 
+			
+			
+			<div id="bottom">
+
+				<div class="footerSiteTourPromo">
+					<b class="footer_up_left_corner"></b>
+					<b class="footer_up_right_corner"></b>
+					<b class="footer_down_left_corner"></b>
+					<b class="footer_down_right_corner"></b>
+					<div class="footerSiteTourMessage">
+						Leia mais sobre as mudanças do leve.me: <a href="/a/tour/">Faça um tour completo</a>
+					</div>
+				</div>
+
+
+				<div class="footerLinksContainer">
+					<div class="bitlyTrademarkContainer">&copy; 2010 Leve.Me <sup><small>TM</small></sup></div>
+					<div class="hr"><hr /></div>
+				</div>
+
+				<form action="" method="get">
+					<input type="hidden" name="_xsrf" value="e0cf3ea1cfbd451e998f81674b406000"/>
+				</form>
+
+			</div> <!-- end #bottom -->
+		</div> <!-- end #container -->
+
+		</body>
+</html>

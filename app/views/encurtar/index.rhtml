@@ -1,0 +1,78 @@
+﻿				<div id="middleLevelContainer1">
+					<div id="mainSearchContainer">
+						<div id="mainSearchContainerInner" class="mainUnAuthShortenContainerInner">
+							<b class="topLeft"></b>
+							<b class="topRight"></b>
+							<b class="bottomRight"></b>
+							<b class="bottomLeft"></b>
+							<b class="bottomBevel"></b>
+							
+							<div id="formulario_shorter" class="formActionContainer">
+						
+								<% remote_form_for @url_, :url =>{:action => 'short'} do |f| %> 								
+								
+									<label for="shortenUnAuthContainer">Encurte com o Leve.me</label>
+									<div class="shortenUnAuthBox">
+										<div id="mainUnAuthShortenContainer" class="inputBoxContainer">
+											<b class="leftEdge"></b>
+											<b class="rightEdge"></b>
+											<%= f.text_field :href, :class => "inputContainerBackground narrowSearchInputTextField" %>										
+										</div>
+										<%= f.submit "Encurtar", :class => "submitButtonBackground" %>										
+										<div class="hr"><hr /></div>
+									</div>								
+								<% end %>
+								
+								<div id="links"></div>
+							</div>
+							
+						</div>
+					</div>
+					
+					<div id="unAuthShortenPromoContainer" class="rightRailPromoModule">
+						<h1 class="auAuthShortenPromoHeadline">Leve.Me?</h1>						
+						<p>A forma mais fácil de você encurtar links, compartilhar e companhar.</p>
+						<div class="signUpContainerButton">
+							<a href="/a/sign_up"><img src="../../images/signup_large_orange_button.png" width="180" height="30" alt="" border="0" /></a>
+						</div>
+					</div>
+					<div class="hr"><hr /></div>
+					
+				</div>		
+				
+				<div class="resultsContainer">
+					<b class="results_topLeft"></b>
+					<b class="results_topRight"></b>
+					<b class="results_bottomRight"></b>
+					<b class="results_bottomLeft"></b>
+					<b class="results_bottomBevel"></b>
+					<div id="historyHeadline"></div>
+					<div id="weeklySparkLines"></div>
+					<div class="history_errorMessage">
+							Parece que você não tem nenhum link encurtado ainda! Coloque um link longo na a caixa acima, e ele vai aparecer aqui.
+					</div>			
+
+					<div id="results" style="display:none;">
+						<div style="display: none;" class="detailsControlBox">
+						  <ul class="oneRowSelected">
+							<li><a href="#" type="one_row" class="hideMoreInfo">One Row</a></li>
+
+							<li><a href="#" type="two_row" class="showMoreInfo">Two Rows</a></li>
+						  </ul>
+						</div>
+
+						<div class="resultsBarContainer">
+						  <b class="resultsBar1">Clicks</b> 
+						  <b class="resultsBar2">Links</b> 
+						  <b class= "resultsBar3">Info Plus</b> 
+						  <b class="resultsBar4">Date</b> 
+						  <b class="resultsBar5">Options</b>
+						</div>
+						
+						<div id="results_itens"></div>
+						
+						<div id="pagination"></div>
+				    </div><!-- end #results -->					
+					
+				</div>
+				

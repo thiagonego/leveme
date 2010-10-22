@@ -1,0 +1,35 @@
+﻿pt:
+  devise:
+    sessions:
+      link: 'Entrar'
+      signed_in: 'Login feito com sucesso.'
+      signed_out: 'Volte sempre'
+      unauthenticated: 'Você precisa estar logado ou registrado para continuar.'
+      unconfirmed: 'Voçê tem que confirmar sua conta no email antes de continuar.'
+      locked: 'Sua conta esta bloqueada.'
+      invalid: 'Email ou senha inválida.'
+      invalid_token: 'Token de autenticação inválida.'
+      timeout: 'Sua sessão expirou. Por favor faça login novamente.'
+      inactive: 'Sua conta não esta ativa ainda.'
+    passwords:
+      link: 'Esqueceu a sua senha?'
+      send_instructions: 'Você receberá um email com as instruções sobre como resetar sua senha e pouco minutos.'
+      updated: 'Sua senha mudou com sucesso. No momento você já esta logado.'
+    confirmations:
+      link: "Ainda não recebeu as instruções para confirmação?"
+      send_instructions: 'Você receberá um email com as instruções em poucos minutos.'
+      confirmed: 'Confirmação feita com sucesso. Você já esta logado.'
+    registrations:
+      link: 'Registre-se'
+      signed_up: 'Registro feito com sucesso.'
+      updated: 'Alterações feitas com sucesso.'
+      destroyed: 'Tchau! Sua conta foi apagado com sucesso. Esperamos lhe vê novamente.'
+    unlocks:
+      link: "Não recebeu as instruções para desbloqueio?"
+      send_instructions: 'Você receberá um email com as instruções de como desbloquear sua conta em poucos minutos.'
+      unlocked: 'Sua conta foi desbloqueada com sucesso. Você já esta logado'
+    mailer:
+      confirmation_instructions: 'Instruções de confirmação'
+      reset_password_instructions: 'Instruções para resetar sua senha'
+      unlock_instructions: 'Instruções para desbloqueio'
+

@@ -1,0 +1,95 @@
+﻿<div id="middleLevelContainer1">
+  <div class="loginLeftColumm leftColumn">
+    <div class="signInForm">
+      <h1 class="signInHeader generalPageHeader">Cadastre-se no Leve.Me</h1>
+
+      <div class="signInFormContainer">
+        <% form_for resource_name, resource, :url => registration_path(resource_name) do |f| -%>
+		  
+		  <%= f.error_messages %>
+          
+          <div class="signInUsernameBox bitlyAuthFormBox">
+			<%= f.label :email, "Email:" %>
+            
+            <div class="bitlyLoginFormField authFormFieldContainer">
+			  <%= f.text_field :email %>
+            </div>
+
+            <div class="hr">
+              <hr />
+            </div>
+          </div>
+
+          <div class="signInPasswordBox bitlyAuthFormBox">
+            <%= f.label :password, "Senha: " %>
+
+            <div class="bitlyLoginFormField authFormFieldContainer">
+              <%= f.password_field :password %>
+            </div>
+
+            <div class="hr">
+              <hr />
+            </div>
+		
+          </div>
+		  
+          <div class="signInUsernameBox bitlyAuthFormBox">
+			<%= f.label :password_confirmation %>
+            
+            <div class="bitlyLoginFormField authFormFieldContainer">
+			  <%= f.password_field :password_confirmation %>
+            </div>			
+
+            <div class="hr">
+              <hr />
+            </div>
+          </div>		  
+
+		  <%= f.submit "Enviar", :class => "submitButtonBackground" %>
+        <% end -%>
+
+        <div class="signInMeta">
+          <p>Já tem uma conta? <%= link_to t('devise.sessions.link'), new_session_path(resource_name) %></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="hr">
+      <hr />
+    </div>
+  </div>
+
+  <div class="loginRightColumn rightColumn">
+    <div class="signUp_promo_container">
+      <div class="signUp_promo_container_inner">
+		<b class="signUpPromoContainerUpperLeft"></b>
+		<b class="signUpPromoContainerUpperRight"></b>
+		<b class="signUpPromoContainerLowerLeft"></b>
+		<b class="signUpPromoContainerLowerRight"></b>	
+		
+        <h1 class="signInHeader generalPageHeader">Encurte e faça muito mais com o Leve.Me</h1>
+
+        <ul class="signup_features_list">
+          <li>Link muito fácio e messagem para compartilhar</li>
+
+          <li>Busca complexa</li>
+
+          <li>Use o leve.me em qualquer canto com o plugin <a href=
+          "/pages/sidebar">sidebar</a></li>
+
+          <li>Ferramentas de consultas</li>
+
+          <li>API super fácil</li>
+
+        </ul>
+		
+		<div class="signUp_promo_container_bottom">
+			<div class="signUp_promo_container_bottom_inner">
+				Ainda não esta convicente?
+			</div>
+		</div>
+		
+      </div>
+    </div>
+  </div>
+</div>
