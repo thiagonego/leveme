@@ -9,6 +9,7 @@ class EncurtarController < ApplicationController
 	end
 	
 	def short	  
+	  params[:url][:href].gsub!(" ","") unless params[:url][:href].blank?
 		uri = URI::parse(params[:url][:href])
 		if uri.kind_of? URI::HTTP or uri.kind_of? URI::HTTPS
 			@link = Link.short_link(params[:url][:href]) 	
@@ -34,7 +35,7 @@ class EncurtarController < ApplicationController
 	end
 
 	def api
-	  
+	  params[:url].gsub!(" ","") unless params[:url].blank?
 		uri = URI::parse(params[:url])
 		if uri.kind_of? URI::HTTP or uri.kind_of? URI::HTTPS
 			@link = Link.short_link(params[:url]) 	

@@ -2928,3 +2928,171 @@ Processing EncurtarController#api to txt (for 127.0.0.1 at 2010-10-22 16:34:16) 
 Completed in 59ms (View: 0, DB: 11) | 200 OK [http://localhost/encurtar/api.txt?url=http%3A%2F%2Fwww.opa.com.br]
 DEPRECATION WARNING: metaclass is deprecated and will be removed from Rails 2.3 (use singleton_class instead). (called from default_url_options at /Users/thiagosampaio/.gem/ruby/1.8/gems/devise-1.0.6/lib/devise.rb:186)
 DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /Users/thiagosampaio/Dropbox/Programacao/JATIC/Código Pronto/leveme/app/models/usuario.rb:4)
+DEPRECATION WARNING: metaclass is deprecated and will be removed from Rails 2.3 (use singleton_class instead). (called from default_url_options at /Users/thiagosampaio/.gem/ruby/1.8/gems/devise-1.0.6/lib/devise.rb:186)
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /Users/thiagosampaio/Dropbox/Programacao/JATIC/Código Pronto/leveme/app/models/usuario.rb:4)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_encoding TO 'unicode'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EncurtarController#index (for 127.0.0.1 at 2010-10-22 16:55:35) [GET]
+Rendering template within layouts/application
+Rendering encurtar/index
+Completed in 51ms (View: 31, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_encoding TO 'unicode'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EncurtarController#short (for 127.0.0.1 at 2010-10-22 16:55:40) [POST]
+  Parameters: {"commit"=>"Encurtar", "authenticity_token"=>"B8Dw1qLAhmGLYVZb/Nqy8sXe34XbrKw5JzL+TytQEBs=", "url"=>{"href"=>"http://www.sampcio.com.br "}, "locale"=>"en"}
+
+URI::InvalidURIError (bad URI(is not URI?): http://www.sampcio.com.br ):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/uri/common.rb:436:in `split'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/uri/common.rb:485:in `parse'
+  app/controllers/encurtar_controller.rb:12:in `short'
+  warden (1.0.1) lib/warden/manager.rb:35:in `call'
+  warden (1.0.1) lib/warden/manager.rb:34:in `catch'
+  warden (1.0.1) lib/warden/manager.rb:34:in `call'
+
+Rendered rescues/_trace (149.6ms)
+Rendered rescues/_request_and_response (1.8ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_encoding TO 'unicode'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EncurtarController#short (for 127.0.0.1 at 2010-10-22 16:56:05) [POST]
+  Parameters: {"commit"=>"Encurtar", "authenticity_token"=>"B8Dw1qLAhmGLYVZb/Nqy8sXe34XbrKw5JzL+TytQEBs=", "url"=>{"href"=>"http://www.sampcio.com.br "}, "locale"=>"en"}
+
+NoMethodError (private method `gsub' called for {"href"=>"http://www.sampcio.com.br "}:HashWithIndifferentAccess):
+  app/controllers/encurtar_controller.rb:12:in `short'
+  warden (1.0.1) lib/warden/manager.rb:35:in `call'
+  warden (1.0.1) lib/warden/manager.rb:34:in `catch'
+  warden (1.0.1) lib/warden/manager.rb:34:in `call'
+
+Rendered rescues/_trace (41.5ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_encoding TO 'unicode'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EncurtarController#short (for 127.0.0.1 at 2010-10-22 16:56:10) [POST]
+  Parameters: {"commit"=>"Encurtar", "authenticity_token"=>"B8Dw1qLAhmGLYVZb/Nqy8sXe34XbrKw5JzL+TytQEBs=", "url"=>{"href"=>"http://www.sampcio.com.br "}, "locale"=>"en"}
+
+NoMethodError (private method `gsub' called for {"href"=>"http://www.sampcio.com.br "}:HashWithIndifferentAccess):
+  app/controllers/encurtar_controller.rb:12:in `short'
+  warden (1.0.1) lib/warden/manager.rb:35:in `call'
+  warden (1.0.1) lib/warden/manager.rb:34:in `catch'
+  warden (1.0.1) lib/warden/manager.rb:34:in `call'
+
+Rendered rescues/_trace (48.6ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_encoding TO 'unicode'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EncurtarController#short (for 127.0.0.1 at 2010-10-22 16:56:43) [POST]
+  Parameters: {"commit"=>"Encurtar", "authenticity_token"=>"B8Dw1qLAhmGLYVZb/Nqy8sXe34XbrKw5JzL+TytQEBs=", "url"=>{"href"=>"http://www.sampcio.com.br "}, "locale"=>"en"}
+
+URI::InvalidURIError (bad URI(is not URI?): http://www.sampcio.com.br ):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/uri/common.rb:436:in `split'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/uri/common.rb:485:in `parse'
+  app/controllers/encurtar_controller.rb:13:in `short'
+  warden (1.0.1) lib/warden/manager.rb:35:in `call'
+  warden (1.0.1) lib/warden/manager.rb:34:in `catch'
+  warden (1.0.1) lib/warden/manager.rb:34:in `call'
+
+Rendered rescues/_trace (139.2ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSET client_encoding TO 'unicode'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EncurtarController#short (for 127.0.0.1 at 2010-10-22 16:56:55) [POST]
+  Parameters: {"commit"=>"Encurtar", "authenticity_token"=>"B8Dw1qLAhmGLYVZb/Nqy8sXe34XbrKw5JzL+TytQEBs=", "url"=>{"href"=>"http://www.sampcio.com.br"}, "locale"=>"en"}
+  [4;36;1mUrl Load (2.5ms)[0m   [0;1mSELECT * FROM "urls" WHERE ("urls"."href" = 'http://www.sampcio.com.br') LIMIT 1[0m
+  [4;35;1mLink Load (1.3ms)[0m   [0mSELECT * FROM "links" WHERE ("links"."id" = 1) [0m
+Rendering encurtar/short
+  [4;36;1mUrl Load (1.2ms)[0m   [0;1mSELECT * FROM "urls" WHERE ("urls".link_id = 1) LIMIT 1[0m
+Rendered encurtar/_encurtado (5.2ms)
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT count(*) AS count_all FROM "visitas" WHERE ("visitas".link_id = 1) [0m
+Rendered encurtar/_item_result (14.0ms)
+Completed in 66ms (View: 31, DB: 8) | 200 OK [http://localhost/encurtar/short?locale=en]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_encoding TO 'unicode'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EncurtarController#short (for 127.0.0.1 at 2010-10-22 16:57:16) [POST]
+  Parameters: {"commit"=>"Encurtar", "authenticity_token"=>"B8Dw1qLAhmGLYVZb/Nqy8sXe34XbrKw5JzL+TytQEBs=", "url"=>{"href"=>"http://www.sampcio.com.br "}, "locale"=>"en"}
+  [4;36;1mUrl Load (2.3ms)[0m   [0;1mSELECT * FROM "urls" WHERE ("urls"."href" = 'http://www.sampcio.com.br') LIMIT 1[0m
+  [4;35;1mLink Load (1.2ms)[0m   [0mSELECT * FROM "links" WHERE ("links"."id" = 1) [0m
+Rendering encurtar/short
+  [4;36;1mUrl Load (1.0ms)[0m   [0;1mSELECT * FROM "urls" WHERE ("urls".link_id = 1) LIMIT 1[0m
+Rendered encurtar/_encurtado (4.0ms)
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT count(*) AS count_all FROM "visitas" WHERE ("visitas".link_id = 1) [0m
+Rendered encurtar/_item_result (8.4ms)
+Completed in 38ms (View: 13, DB: 7) | 200 OK [http://localhost/encurtar/short?locale=en]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET client_encoding TO 'unicode'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (7.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EncurtarController#short (for 127.0.0.1 at 2010-10-22 16:57:19) [POST]
+  Parameters: {"commit"=>"Encurtar", "authenticity_token"=>"B8Dw1qLAhmGLYVZb/Nqy8sXe34XbrKw5JzL+TytQEBs=", "url"=>{"href"=>"http://www.sampcio.com.br "}, "locale"=>"en"}
+  [4;36;1mUrl Load (2.3ms)[0m   [0;1mSELECT * FROM "urls" WHERE ("urls"."href" = 'http://www.sampcio.com.br') LIMIT 1[0m
+  [4;35;1mLink Load (1.4ms)[0m   [0mSELECT * FROM "links" WHERE ("links"."id" = 1) [0m
+Rendering encurtar/short
+  [4;36;1mUrl Load (1.5ms)[0m   [0;1mSELECT * FROM "urls" WHERE ("urls".link_id = 1) LIMIT 1[0m
+Rendered encurtar/_encurtado (5.8ms)
+  [4;35;1mSQL (1.3ms)[0m   [0mSELECT count(*) AS count_all FROM "visitas" WHERE ("visitas".link_id = 1) [0m
+Rendered encurtar/_item_result (11.6ms)
+Completed in 45ms (View: 18, DB: 15) | 200 OK [http://localhost/encurtar/short?locale=en]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_encoding TO 'unicode'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EncurtarController#short (for 127.0.0.1 at 2010-10-22 16:57:25) [POST]
+  Parameters: {"commit"=>"Encurtar", "authenticity_token"=>"B8Dw1qLAhmGLYVZb/Nqy8sXe34XbrKw5JzL+TytQEBs=", "url"=>{"href"=>"http://www.sampcio.com.br     "}, "locale"=>"en"}
+  [4;36;1mUrl Load (2.4ms)[0m   [0;1mSELECT * FROM "urls" WHERE ("urls"."href" = 'http://www.sampcio.com.br') LIMIT 1[0m
+  [4;35;1mLink Load (1.1ms)[0m   [0mSELECT * FROM "links" WHERE ("links"."id" = 1) [0m
+Rendering encurtar/short
+  [4;36;1mUrl Load (1.0ms)[0m   [0;1mSELECT * FROM "urls" WHERE ("urls".link_id = 1) LIMIT 1[0m
+Rendered encurtar/_encurtado (4.0ms)
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT count(*) AS count_all FROM "visitas" WHERE ("visitas".link_id = 1) [0m
+Rendered encurtar/_item_result (8.9ms)
+Completed in 41ms (View: 14, DB: 7) | 200 OK [http://localhost/encurtar/short?locale=en]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_encoding TO 'unicode'[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EncurtarController#short (for 127.0.0.1 at 2010-10-22 16:57:29) [POST]
+  Parameters: {"commit"=>"Encurtar", "authenticity_token"=>"B8Dw1qLAhmGLYVZb/Nqy8sXe34XbrKw5JzL+TytQEBs=", "url"=>{"href"=>"http://www.sampcio.com.br "}, "locale"=>"en"}
+  [4;36;1mUrl Load (2.2ms)[0m   [0;1mSELECT * FROM "urls" WHERE ("urls"."href" = 'http://www.sampcio.com.br') LIMIT 1[0m
+  [4;35;1mLink Load (1.2ms)[0m   [0mSELECT * FROM "links" WHERE ("links"."id" = 1) [0m
+Rendering encurtar/short
+  [4;36;1mUrl Load (1.1ms)[0m   [0;1mSELECT * FROM "urls" WHERE ("urls".link_id = 1) LIMIT 1[0m
+Rendered encurtar/_encurtado (4.3ms)
+  [4;35;1mSQL (1.3ms)[0m   [0mSELECT count(*) AS count_all FROM "visitas" WHERE ("visitas".link_id = 1) [0m
+Rendered encurtar/_item_result (10.3ms)
+Completed in 133ms (View: 17, DB: 8) | 200 OK [http://localhost/encurtar/short?locale=en]
