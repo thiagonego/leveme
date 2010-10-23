@@ -41,3 +41,17 @@ Rails::Initializer.run do |config|
   # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}')]
   #config.i18n.default_locale = "pt"
 end
+
+#Configuracoes do Email
+ActionMailer::Base.delivery_method = :smtp
+ActionMailer::Base.default_content_type = "text/html"
+ActionMailer::Base.default_charset = "UTF-8"
+ActionMailer::Base.smtp_settings = {
+  :tls => true,
+  :address => "smtp.gmail.com",
+  :port => "587",
+  :domain => "www.seiz.com.br",
+  :authentication => :login, # pode usar tamb�m :login
+  :user_name => "relatorio@seiz.com.br",
+  :password => "sampaio110983"
+}

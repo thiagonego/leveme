@@ -1,0 +1,53 @@
+ <div id="ver1_container">
+    <table>
+      <tbody>
+        <tr>
+          <td id="left_col">
+            <div id="left_col_inner">
+              <div id="left_col_min_width"></div>
+
+              <div id="above_dial_errors">
+                <div style="display: none;" id="errors"></div>
+              </div>
+
+              <h1><span class="with_plus_bg"><%= "#{$URL_ROOT}/#{@link.atalho }" %></span></h1>
+
+              <div id="info">
+                <p class="link-title">Thiago Sampaio Blog</p>
+	
+                  <dl class="info-snapshot clicks">
+                    <dd><span style="display: none;" id="short_url">http://bit.ly/d1kbUy</span></dd>
+
+                    <dt><em id="global_clicks_count_el"><%= @link.visitas.size %></em></dt>
+
+                    <dd>
+                      <em>Total Click</em>
+
+                      <p>
+						Todos os cliques no link agregado leve.me 
+						<%= link_to "#{$URL_ROOT}/#{@link.atalho }", "#{$URL_ROOT}/#{@link.atalho }"%>
+					  </p>
+					
+                    </dd>
+                  </dl>
+
+                  <dl class="info-snapshot">
+                    <dt>Link Original:</dt>
+
+                    <dd><%= link_to @link.url.href, @link.url.href %></dd>
+
+                    <dt>&nbsp;</dt>
+
+                  </dl>
+
+                  <div class="clearleft"></div>
+                </div>
+              </div><!-- Traffic section -->
+
+              <div class="clearboth"></div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>

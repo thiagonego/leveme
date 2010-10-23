@@ -5,11 +5,12 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :urls
   map.resources :links
   map.resources :visitas    
-  map.resources :encurtar, :collection => {:api => :get}
+  map.resources :encurtar, :collection => {:api => :get, :api_info => :get}
 
   map.root :controller => "encurtar"
   
   map.connect "/:short_url", :controller => "encurtar", :action => "go"
+  map.connect "/info/:short_url", :controller => "encurtar", :action => "info"
   
   # The priority is based upon order of creation: first created -> highest priority.
 

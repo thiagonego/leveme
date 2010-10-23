@@ -49,4 +49,17 @@ class EncurtarController < ApplicationController
 	  end	  
 	end
 	
+	def info
+	  @link = Link.find_by_atalho(params[:short_url])  
+	  respond_to do |format|
+	    format.html
+    end
+	end
+	
+	def api_info
+	  respond_to do |format|
+	    format.html
+	  end	 
+	end
+	
 end

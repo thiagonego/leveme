@@ -38,8 +38,7 @@
 
 					<div id="mainTabsContainer">
 						<ul class="mainTabsList">
-							<li ><a class="activeTab" href="/">Encurtar</a></li>
-							<li ><a class="inactiveTab" href="/a/search">Estatisticas</a></li>
+							<li ><%= link_to "Encurtar", root_path, :class => "activeTab"%></li>
 						</ul>
 					</div>
 
@@ -63,7 +62,7 @@
 								<div class="inactiveSubNav">
 									<b class="hoverTabItemLeftEdge"></b>
 									<b class="hoverTabItemRightEdgeEdge"></b>
-									<a href="">Ajuda</a>
+									<a href=""></a>
 								</div>
 							</li>
 
@@ -71,7 +70,7 @@
 								<div class="activeSubNav">
 									<b class="selectedTabItemLeftEdge"></b>
 									<b class="selectedTabItemRightEdgeEdge"></b>
-									<a href="/">Encurtar</a>
+									<%= link_to "Encurtar", root_path %>
 								</div>
 							</li>
 
@@ -79,15 +78,7 @@
 								<div class="inactiveSubNav">
 									<b class="hoverTabItemLeftEdge"></b>
 									<b class="hoverTabItemRightEdgeEdge"></b>
-									<a href="">Ferramentas</a>
-								</div>
-							</li>
-
-							<li class="">
-								<div class="inactiveSubNav">
-									<b class="hoverTabItemLeftEdge"></b>
-									<b class="hoverTabItemRightEdgeEdge"></b>
-									<a href="">Api</a>
+									<%= link_to "Api", api_info_encurtar_url %>
 								</div>
 							</li>
 
@@ -120,13 +111,11 @@
 
 
 				<div class="footerLinksContainer">
-					<div class="bitlyTrademarkContainer">&copy; 2010 Leve.Me <sup><small>TM</small></sup></div>
+					<div class="bitlyTrademarkContainer">
+						Desenvolvido por <%= link_to "@thiagonego", "http://twitter.com/thiagonego"%> &copy; 2010 Leve.Me 
+						<sup><small>TM</small></sup></div>
 					<div class="hr"><hr /></div>
 				</div>
-
-				<form action="" method="get">
-					<input type="hidden" name="_xsrf" value="e0cf3ea1cfbd451e998f81674b406000"/>
-				</form>
 
 			</div> <!-- end #bottom -->
 		</div> <!-- end #container -->
