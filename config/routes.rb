@@ -1,15 +1,15 @@
 ActionController::Routing::Routes.draw do |map|
 
-  map.root :controller => "encurtar"
-  
-  map.connect "/:short_url", :controller => "encurtar", :action => "go"
-  
   map.devise_for :usuarios, :path_names => { :sign_in => 'entrar', :sign_out => 'sair', :sign_up => "registrar" }
   
   map.resources :urls
   map.resources :links
   map.resources :visitas    
   map.resources :encurtar, :collection => {:api => :get}
+
+  map.root :controller => "encurtar"
+  
+  map.connect "/:short_url", :controller => "encurtar", :action => "go"
   
   # The priority is based upon order of creation: first created -> highest priority.
 

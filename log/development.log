@@ -3096,3 +3096,282 @@ Rendered encurtar/_encurtado (4.3ms)
   [4;35;1mSQL (1.3ms)[0m   [0mSELECT count(*) AS count_all FROM "visitas" WHERE ("visitas".link_id = 1) [0m
 Rendered encurtar/_item_result (10.3ms)
 Completed in 133ms (View: 17, DB: 8) | 200 OK [http://localhost/encurtar/short?locale=en]
+DEPRECATION WARNING: metaclass is deprecated and will be removed from Rails 2.3 (use singleton_class instead). (called from default_url_options at /Users/thiagosampaio/.gem/ruby/1.8/gems/devise-1.0.6/lib/devise.rb:186)
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /Users/thiagosampaio/Dropbox/Programacao/JATIC/Código Pronto/leveme/app/models/usuario.rb:4)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_encoding TO 'unicode'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EncurtarController#index (for 127.0.0.1 at 2010-10-22 17:37:41) [GET]
+Rendering template within layouts/application
+Rendering encurtar/index
+Completed in 47ms (View: 30, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET client_encoding TO 'unicode'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2010-10-22 17:38:53) [GET]
+  Parameters: {"locale"=>"en"}
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /Users/thiagosampaio/Dropbox/Programacao/JATIC/Código Pronto/leveme/app/models/usuario.rb:4)
+Rendering template within layouts/application
+Rendering registrations/new
+Completed in 39ms (View: 24, DB: 2) | 200 OK [http://localhost/usuarios/registrar?locale=en]
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSET client_encoding TO 'unicode'[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EncurtarController#go (for 127.0.0.1 at 2010-10-22 17:39:03) [POST]
+  Parameters: {"short_url"=>"usuarios", "commit"=>"Enviar", "authenticity_token"=>"B8Dw1qLAhmGLYVZb/Nqy8sXe34XbrKw5JzL+TytQEBs=", "usuario"=>{"password_confirmation"=>"sampaio", "password"=>"sampaio", "email"=>"fspreto@gmail.com"}, "locale"=>"en"}
+  [4;36;1mLink Load (2.4ms)[0m   [0;1mSELECT * FROM "links" WHERE ("links"."atalho" = 'usuarios') LIMIT 1[0m
+Redirected to http://localhost:3000/?locale=en
+Completed in 33ms (DB: 4) | 302 Found [http://localhost/usuarios?locale=en]
+  [4;35;1mSQL (1.2ms)[0m   [0mSET client_encoding TO 'unicode'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing EncurtarController#index (for 127.0.0.1 at 2010-10-22 17:39:03) [GET]
+  Parameters: {"locale"=>"en"}
+Rendering template within layouts/application
+Rendering encurtar/index
+Completed in 22ms (View: 9, DB: 2) | 200 OK [http://localhost/?locale=en]
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /Users/thiagosampaio/Dropbox/Programacao/JATIC/Código Pronto/leveme/app/models/usuario.rb:4)
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_encoding TO 'unicode'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing EncurtarController#index (for 127.0.0.1 at 2010-10-22 17:39:41) [GET]
+Rendering template within layouts/application
+Rendering encurtar/index
+Completed in 21ms (View: 9, DB: 1) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_encoding TO 'unicode'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing EncurtarController#short (for 127.0.0.1 at 2010-10-22 17:39:46) [POST]
+  Parameters: {"commit"=>"Encurtar", "authenticity_token"=>"B8Dw1qLAhmGLYVZb/Nqy8sXe34XbrKw5JzL+TytQEBs=", "url"=>{"href"=>"http://www.rix.com.br"}, "locale"=>"en"}
+  [4;35;1mUrl Load (2.0ms)[0m   [0mSELECT * FROM "urls" WHERE ("urls"."href" = 'http://www.rix.com.br') LIMIT 1[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (16.2ms)[0m   [0mINSERT INTO "urls" ("href", "link_id", "updated_at", "created_at") VALUES('http://www.rix.com.br', NULL, '2010-10-23 00:39:46.212595', '2010-10-23 00:39:46.212595') RETURNING "id"[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mINSERT INTO "links" ("updated_at", "atalho", "created_at") VALUES('2010-10-23 00:39:46.247416', 'j', '2010-10-23 00:39:46.247416') RETURNING "id"[0m
+  [4;35;1mUrl Update (0.7ms)[0m   [0mUPDATE "urls" SET "link_id" = 19, "updated_at" = '2010-10-23 00:39:46.255869' WHERE "id" = 19[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mCOMMIT[0m
+Rendering encurtar/short
+Rendered encurtar/_encurtado (1.3ms)
+  [4;35;1mSQL (1.1ms)[0m   [0mSELECT count(*) AS count_all FROM "visitas" WHERE ("visitas".link_id = 19) [0m
+Rendered encurtar/_item_result (16.7ms)
+Completed in 109ms (View: 34, DB: 27) | 200 OK [http://localhost/encurtar/short?locale=en]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_encoding TO 'unicode'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EncurtarController#go (for 127.0.0.1 at 2010-10-22 17:39:49) [GET]
+  Parameters: {"short_url"=>"j"}
+  [4;36;1mLink Load (2.3ms)[0m   [0;1mSELECT * FROM "links" WHERE ("links"."atalho" = 'j') LIMIT 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mINSERT INTO "visitas" ("link_id", "updated_at", "ip", "pais", "created_at") VALUES(19, '2010-10-23 00:39:49.237567', NULL, NULL, '2010-10-23 00:39:49.237567') RETURNING "id"[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUrl Load (1.4ms)[0m   [0;1mSELECT * FROM "urls" WHERE ("urls".link_id = 19) LIMIT 1[0m
+Redirected to http://www.rix.com.br
+Completed in 47ms (DB: 8) | 301 Moved Permanently [http://localhost/j]
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_encoding TO 'unicode'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2010-10-22 17:40:00) [GET]
+  Parameters: {"locale"=>"en"}
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /Users/thiagosampaio/Dropbox/Programacao/JATIC/Código Pronto/leveme/app/models/usuario.rb:4)
+Rendering template within layouts/application
+Rendering registrations/new
+Completed in 32ms (View: 16, DB: 1) | 200 OK [http://localhost/usuarios/registrar?locale=en]
+  [4;35;1mSQL (0.8ms)[0m   [0mSET client_encoding TO 'unicode'[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing RegistrationsController#create (for 127.0.0.1 at 2010-10-22 17:40:10) [POST]
+  Parameters: {"commit"=>"Enviar", "authenticity_token"=>"B8Dw1qLAhmGLYVZb/Nqy8sXe34XbrKw5JzL+TytQEBs=", "usuario"=>{"password_confirmation"=>"sampaio", "password"=>"sampaio", "email"=>"thiagonego@gmail.com"}, "locale"=>"en"}
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /Users/thiagosampaio/Dropbox/Programacao/JATIC/Código Pronto/leveme/app/models/usuario.rb:4)
+  [4;35;1mSQL (0.4ms)[0m   [0mBEGIN[0m
+  [4;36;1mUsuario Load (11.9ms)[0m   [0;1mSELECT "usuarios".id FROM "usuarios" WHERE ("usuarios"."email" = 'thiagonego@gmail.com') LIMIT 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/application
+Rendering registrations/new
+Completed in 251ms (View: 16, DB: 15) | 200 OK [http://localhost/usuarios?locale=en]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_encoding TO 'unicode'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-10-22 17:40:14) [GET]
+  Parameters: {"locale"=>"en"}
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /Users/thiagosampaio/Dropbox/Programacao/JATIC/Código Pronto/leveme/app/models/usuario.rb:4)
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 38ms (View: 23, DB: 1) | 200 OK [http://localhost/usuarios/entrar?locale=en]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_encoding TO 'unicode'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-10-22 17:40:21) [POST]
+  Parameters: {"commit"=>"Entrar", "_xsrf"=>"10fe8d07564e4043a111af7883532164", "authenticity_token"=>"B8Dw1qLAhmGLYVZb/Nqy8sXe34XbrKw5JzL+TytQEBs=", "usuario"=>{"password"=>"sampaio", "remember_me"=>"0", "email"=>"thiagonego@gmail.com"}, "locale"=>"en"}
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /Users/thiagosampaio/Dropbox/Programacao/JATIC/Código Pronto/leveme/app/models/usuario.rb:4)
+  [4;36;1mUsuario Load (6.4ms)[0m   [0;1mSELECT * FROM "usuarios" WHERE ("usuarios"."email" = 'thiagonego@gmail.com') LIMIT 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mBEGIN[0m
+  [4;36;1mUsuario Update (1.0ms)[0m   [0;1mUPDATE "usuarios" SET "sign_in_count" = 2, "current_sign_in_at" = '2010-10-23 00:40:21.213543', "updated_at" = '2010-10-23 00:40:21.215243' WHERE "id" = 1[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/?locale=en
+Completed in 35ms (DB: 10) | 302 Found [http://localhost/usuarios/entrar?locale=en]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_encoding TO 'unicode'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EncurtarController#index (for 127.0.0.1 at 2010-10-22 17:40:21) [GET]
+  Parameters: {"locale"=>"en"}
+Rendering template within layouts/application
+Rendering encurtar/index
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /Users/thiagosampaio/Dropbox/Programacao/JATIC/Código Pronto/leveme/app/models/usuario.rb:4)
+  [4;36;1mUsuario Load (4.3ms)[0m   [0;1mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 1) LIMIT 1[0m
+Completed in 39ms (View: 23, DB: 6) | 200 OK [http://localhost/?locale=en]
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_encoding TO 'unicode'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-10-22 17:40:25) [GET]
+  Parameters: {"locale"=>"en"}
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /Users/thiagosampaio/Dropbox/Programacao/JATIC/Código Pronto/leveme/app/models/usuario.rb:4)
+  [4;35;1mUsuario Load (5.0ms)[0m   [0mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 1) LIMIT 1[0m
+Redirected to http://localhost:3000/?locale=en
+Completed in 95ms (DB: 7) | 302 Found [http://localhost/usuarios/sair?locale=en]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_encoding TO 'unicode'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing EncurtarController#index (for 127.0.0.1 at 2010-10-22 17:40:25) [GET]
+  Parameters: {"locale"=>"en"}
+Rendering template within layouts/application
+Rendering encurtar/index
+Completed in 22ms (View: 9, DB: 1) | 200 OK [http://localhost/?locale=en]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_encoding TO 'unicode'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing RegistrationsController#new (for 127.0.0.1 at 2010-10-22 17:40:28) [GET]
+  Parameters: {"locale"=>"en"}
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /Users/thiagosampaio/Dropbox/Programacao/JATIC/Código Pronto/leveme/app/models/usuario.rb:4)
+Rendering template within layouts/application
+Rendering registrations/new
+Completed in 30ms (View: 15, DB: 1) | 200 OK [http://localhost/usuarios/registrar?locale=en]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_encoding TO 'unicode'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing RegistrationsController#create (for 127.0.0.1 at 2010-10-22 17:40:43) [POST]
+  Parameters: {"commit"=>"Enviar", "authenticity_token"=>"B8Dw1qLAhmGLYVZb/Nqy8sXe34XbrKw5JzL+TytQEBs=", "usuario"=>{"password_confirmation"=>"sampaio", "password"=>"sampaio", "email"=>"william@gmail.com"}, "locale"=>"en"}
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /Users/thiagosampaio/Dropbox/Programacao/JATIC/Código Pronto/leveme/app/models/usuario.rb:4)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUsuario Load (2.9ms)[0m   [0mSELECT "usuarios".id FROM "usuarios" WHERE ("usuarios"."email" = 'william@gmail.com') LIMIT 1[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mINSERT INTO "usuarios" ("encrypted_password", "confirmed_at", "last_sign_in_ip", "updated_at", "last_sign_in_at", "password_salt", "confirmation_sent_at", "sign_in_count", "current_sign_in_ip", "current_sign_in_at", "remember_token", "confirmation_token", "reset_password_token", "email", "remember_created_at", "created_at") VALUES('1697a6f415809a3dc91633949dc5a319dbfa76c7', NULL, NULL, '2010-10-23 00:40:43.067775', NULL, '2gi52q6xu7fV3URsbV-D', NULL, 0, NULL, NULL, NULL, NULL, NULL, 'william@gmail.com', NULL, '2010-10-23 00:40:43.067775') RETURNING "id"[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUsuario Update (1.4ms)[0m   [0mUPDATE "usuarios" SET "sign_in_count" = 1, "current_sign_in_at" = '2010-10-23 00:40:43.158465', "current_sign_in_ip" = '127.0.0.1', "last_sign_in_at" = '2010-10-23 00:40:43.158465', "updated_at" = '2010-10-23 00:40:43.160895', "last_sign_in_ip" = '127.0.0.1' WHERE "id" = 2[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/?locale=en
+Completed in 124ms (DB: 11) | 302 Found [http://localhost/usuarios?locale=en]
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_encoding TO 'unicode'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing EncurtarController#index (for 127.0.0.1 at 2010-10-22 17:40:43) [GET]
+  Parameters: {"locale"=>"en"}
+Rendering template within layouts/application
+Rendering encurtar/index
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /Users/thiagosampaio/Dropbox/Programacao/JATIC/Código Pronto/leveme/app/models/usuario.rb:4)
+  [4;35;1mUsuario Load (3.1ms)[0m   [0mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 2) LIMIT 1[0m
+Completed in 37ms (View: 21, DB: 5) | 200 OK [http://localhost/?locale=en]
+  [4;36;1mSQL (2.3ms)[0m   [0;1mSET client_encoding TO 'unicode'[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (2.4ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-10-22 17:40:47) [GET]
+  Parameters: {"locale"=>"en"}
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /Users/thiagosampaio/Dropbox/Programacao/JATIC/Código Pronto/leveme/app/models/usuario.rb:4)
+  [4;36;1mUsuario Load (4.4ms)[0m   [0;1mSELECT * FROM "usuarios" WHERE ("usuarios"."id" = 2) LIMIT 1[0m
+Redirected to http://localhost:3000/?locale=en
+Completed in 36ms (DB: 11) | 302 Found [http://localhost/usuarios/sair?locale=en]
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_encoding TO 'unicode'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing EncurtarController#index (for 127.0.0.1 at 2010-10-22 17:40:47) [GET]
+  Parameters: {"locale"=>"en"}
+Rendering template within layouts/application
+Rendering encurtar/index
+Completed in 25ms (View: 10, DB: 1) | 200 OK [http://localhost/?locale=en]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_encoding TO 'unicode'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing EncurtarController#api to txt (for 127.0.0.1 at 2010-10-22 17:40:54) [GET]
+  Parameters: {"url"=>"http://www.google.com.br/search?hl=pt-BR&q=infopod"}
+  [4;35;1mUrl Load (2.1ms)[0m   [0mSELECT * FROM "urls" WHERE ("urls"."href" = 'http://www.google.com.br/search?hl=pt-BR&q=infopod') LIMIT 1[0m
+  [4;36;1mLink Load (1.1ms)[0m   [0;1mSELECT * FROM "links" WHERE ("links"."id" = 12) [0m
+Completed in 23ms (View: 0, DB: 5) | 200 OK [http://localhost/encurtar/api.txt?url=http%3A%2F%2Fwww.google.com.br%2Fsearch%3Fhl%3Dpt-BR%26q%3Dinfopod]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_encoding TO 'unicode'[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing EncurtarController#api to xml (for 127.0.0.1 at 2010-10-22 17:41:02) [GET]
+  Parameters: {"url"=>"http://www.google.com.br/search?hl=pt-BR&q=infopod"}
+  [4;35;1mUrl Load (2.3ms)[0m   [0mSELECT * FROM "urls" WHERE ("urls"."href" = 'http://www.google.com.br/search?hl=pt-BR&q=infopod') LIMIT 1[0m
+  [4;36;1mLink Load (1.1ms)[0m   [0;1mSELECT * FROM "links" WHERE ("links"."id" = 12) [0m
+Rendering encurtar/api
+  [4;35;1mUrl Load (1.1ms)[0m   [0mSELECT * FROM "urls" WHERE ("urls".link_id = 12) LIMIT 1[0m
+Completed in 33ms (View: 8, DB: 6) | 200 OK [http://localhost/encurtar/api.xml?url=http%3A%2F%2Fwww.google.com.br%2Fsearch%3Fhl%3Dpt-BR%26q%3Dinfopod]
